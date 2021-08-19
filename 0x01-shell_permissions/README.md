@@ -10,4 +10,5 @@ chmod o+rwx sets the permission to the file hello, Owner: no permission at all, 
 chmod 753 - sets the mode of the file hello to this:
 chmod --reference=olleh hello - sets the mode of the file hello the same as olleh’s mode.
 chmod -R ugo+X  - adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
-mkdir -m 751 my_dir creates a directory called my_dir with permissions 751 in the working directory.
+mkdir -m 751 my_dir creates a directory called my_dir with permissions 751 in the working director
+sudo chgrp school hello changes the group owner to school for the file hello

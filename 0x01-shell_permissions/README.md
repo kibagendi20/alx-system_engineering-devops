@@ -8,3 +8,4 @@ chmod u+x,g+x,o+r adds execute permission to the owner and the group owner, and 
 chmod a+x adds execution permission to the owner, the group owner and the other users, to the file hello
 chmod o+rwx sets the permission to the file hello, Owner: no permission at all, Group: no permission at all, Other users: all the permissions 
 chmod 753 - sets the mode of the file hello to this:
+chmod --reference=olleh hello - sets the mode of the file hello the same as olleh’s mode.

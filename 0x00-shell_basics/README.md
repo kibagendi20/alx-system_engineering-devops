@@ -14,3 +14,4 @@ file /tmp/iamafile - prints the type of the file named iamafile. The file iamafi
 ln -s /bin/ls __ls__ creates symbolic link to /bin/ls, named __ls__, it's created in the current directory
 ls -la Display current directory contents with user and group IDs displayed numerically And hidden files (starting with .)
 mv [[:upper:]]* /tmp/u moves all files beginning with an uppercase letter to the directory /tmp/u.
+rm *~  deletes all files in the current working directory that end with the character ~.

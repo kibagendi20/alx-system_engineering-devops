@@ -1,0 +1,1 @@
+less/etc/passwd - displays content of /etc/passwd file

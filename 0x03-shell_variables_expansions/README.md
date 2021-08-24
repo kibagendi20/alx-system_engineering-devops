@@ -5,4 +5,6 @@ export PATH=$PATH:/action - Add /action to the PATH. /action should be the last 
 echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1)) - counts the number of directories in the PATH.
 printenv - lists environment variables.
 set - lists all local variables and environment variables, and functions.
-BETTY=olberton
+BETTY=holberton - creates a new local variable.
+export HOLBERTON=Betty = creates a new global variable
+

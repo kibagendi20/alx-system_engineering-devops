@@ -13,3 +13,4 @@ $(($BREATH**$LOVE)) - displays the result of BREATH to the power LOVE
 echo $((2#$BINARY)) converts a number from base 2 to base 10.
 echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" - prints all possible combinations of two letters, except oo.
 printf "%.2f" $NUM | sort - prints a number with two decimal places, followed by a new line.
+perl -lne 'print if $. % 2 == 1' - prints every other line from the input, starting with the first line.

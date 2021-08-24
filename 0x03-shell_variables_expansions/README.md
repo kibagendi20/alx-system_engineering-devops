@@ -15,3 +15,5 @@ echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" - prints all possible combination
 printf "%.2f" $NUM | sort - prints a number with two decimal places, followed by a new line.
 perl -lne 'print if $. % 2 == 1' - prints every other line from the input, starting with the first line.
 echo $((16#$DECIMAL)) - converts a number from base 10 to base 16.
+tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`
+encodes and decodes text using the rot13 encryption. Assume ASCII.

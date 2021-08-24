@@ -17,3 +17,5 @@ perl -lne 'print if $. % 2 == 1' - prints every other line from the input, start
 echo $((16#$DECIMAL)) - converts a number from base 10 to base 16.
 tr `echo {a..z} | tr -d ' '` `echo {n..z} $(echo {a..m}) | tr -d ' '` | tr `echo {A..Z} | tr -d ' '` `echo {N..Z} $(echo {A..M}) | tr -d ' '`
 encodes and decodes text using the rot13 encryption. Assume ASCII.
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'behlnort')
+adds the two numbers stored in the environment variables WATER and STIR and prints the result.
